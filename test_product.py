@@ -1,5 +1,6 @@
 import unittest
-from  unittest.mock import MagicMock, Mock, patch
+from unittest.mock import MagicMock, patch
+
 import main
 
 
@@ -7,6 +8,7 @@ class Generator:
     def iter(self):
         for i in [1, 2, 3]:
             yield i
+
 
 class LMAO_Consumer:
     def __init__(self, name, kekMock):
@@ -16,24 +18,26 @@ class LMAO_Consumer:
     def STFU(self, kekMock):
         assert kekMock is main.Kek
 
+
 # Unittest
 
 class TestClass(unittest.TestCase):
     def test_initialization(self):
-      kek = main.Kek("Troll Face", 10)
-      self.assertEqual(kek.name, 'Troll Face')
-      #self.assertEqual(kek.rofl, 10)
+        kek = main.Kek("Troll Face", 10)
+        self.assertEqual(kek.name, 'Troll Face')
+        # self.assertEqual(kek.rofl, 10)
 
-    #def test_secondmarkname(self):
-     # car = object.Car("Troll Face", 99000)
-      #self.assertTrue(car.second_mark_name("Volga"))
+    # def test_secondmarkname(self):
+    # car = object.Car("Troll Face", 99000)
+    # self.assertTrue(car.second_mark_name("Volga"))
 
     def test_object(self):
-      kek = main.Kek("Troll Face", 10)
-      assert isinstance(kek, main.Kek)
+        kek = main.Kek("Troll Face", 10)
+        assert isinstance(kek, main.Kek)
 
     def test_printer(self):
-      self.assertTrue(main.Kek.get_rofl_of_old_kek)
+        self.assertTrue(main.Kek.get_rofl_of_old_kek)
+
 
 if __name__ == "__main__":
     unittest.main()
@@ -60,6 +64,5 @@ if __name__ == "__main__":
     mock_foo.iter.return_value = iter([1, 2, 3])
     print(list(mock_foo.iter()))
 
-    #mock2 = Mock(side_effect=KeyError('llololololololo')) 
-    #mock2()
-   
+    # mock2 = Mock(side_effect=KeyError('llololololololo'))
+    # mock2()
