@@ -6,6 +6,9 @@ class Kek:
         self.name = name
         self.rofk = rofl
 
+
+        self.change = "test"
+
     def get_rofl_of_old_kek(self):
         return self.rofl / 2
 
@@ -16,7 +19,7 @@ class Kek:
 class KekGenerator:
     iter = 0
     def generate(self):
-
+	
         self.iter += 1
         return Kek('Kek' + str(self.iter), self.iter * 2) 
 
