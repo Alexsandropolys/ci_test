@@ -43,8 +43,8 @@ if __name__ == "__main__":
     unittest.main()
 
     kek = main.Kek("Dat feel", 20)
-    kek.is_equal_name = MagicMock(return_value="true");
-    print(kek.is_equal_name("Absolutely different meme"));
+    kek.is_equal_name = MagicMock(return_value="true")
+    print(kek.is_equal_name("Absolutely different meme"))
 
     mock = MagicMock()
     mock.name = "Troll Face"
@@ -54,8 +54,8 @@ if __name__ == "__main__":
     kek2.name = mock.name
     print(kek2.name)
 
-    consumer = LMAO_Consumer("Bred", mock);
-    consumer.STFU();
+    consumer = LMAO_Consumer("Bred", mock)
+    consumer.STFU()
 
     gen = Generator()
     print(list(gen.iter()))

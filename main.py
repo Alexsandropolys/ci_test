@@ -25,14 +25,14 @@ class KekGenerator:
 
 
 if __name__ == "__main__":
-    unittest.main();
+    unittest.main()
     N = 10
     print(
-        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawwwwwwwwwwwwwwwwwwwwwwwwww")
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaawwwwwwwwwwwwwwwwwwwwww")
     generator = KekGenerator()
     for i in range(0, N):
         kek = generator.generate()
-        print(product.name)
-        print(product.rofl)
-        print(product.get_rofl_of_old_kek())
+        print(kek.name)
+        print(kek.rofl)
+        print(kek.get_rofl_of_old_kek())
         print("-----iteration-----")
